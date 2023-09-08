@@ -1,14 +1,18 @@
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.printf("Hello and welcome!");
 
+        System.out.println("Wprowadź liczbę");
+        Scanner scanner = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-
-
-            System.out.println("i = " + i);
+        int x = scanner.nextInt();
+        int silnia = 1;
+        for (int i = 1; i <= x; i++){
+            silnia = silnia * i;
         }
+        System.out.println("Silnia wynosi: " + silnia);
+
     }
 }
